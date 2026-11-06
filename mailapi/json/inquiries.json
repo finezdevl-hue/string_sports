@@ -1,0 +1,26 @@
+[
+    {
+        "id": "2",
+        "name": "Harikrishna Manoj",
+        "email": "harikrishnamanoj79@gmail.com",
+        "phone": "6238426929",
+        "subject": "hi",
+        "inquiry_type": "general",
+        "quantity_tier": "",
+        "message": "hi",
+        "ip_address": "::1",
+        "created_at": "2026-10-12 11:11:27"
+    },
+    {
+        "id": "1",
+        "name": "finez",
+        "email": "harikrishnamanoj79@gmail.com",
+        "phone": "+9197451 70101",
+        "subject": "test",
+        "inquiry_type": "bulk_order",
+        "quantity_tier": "",
+        "message": "test",
+        "ip_address": "::1",
+        "created_at": "2026-10-10 16:07:32"
+    }
+]

@@ -1,0 +1,15 @@
+# ------------------------------------------------------------------------------
+# STRINGS SPORTS - Apache .htaccess Configuration
+# ------------------------------------------------------------------------------
+Options -Indexes
+RewriteEngine On
+
+# 1. Do NOT redirect POST requests (prevents losing form submissions & credentials)
+RewriteCond %{REQUEST_METHOD} !POST
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# 2. Internally route extensionless URLs to corresponding .php files
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*?)/?$ $1.php [L]
